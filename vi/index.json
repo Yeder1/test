@@ -1,83 +1,83 @@
 [
 {
-	"uri": "/vi/2-prerequiste/2.1-lambda/",
+	"uri": "https://yeder1.github.io/test/vi/2-prerequiste/2.1-lambda/",
 	"title": "Chuẩn bị AWS Lambda",
 	"tags": [],
 	"description": "",
 	"content": "Giới Thiệu AWS Lambda là dịch vụ điện toán không máy chủ (serverless), cho phép bạn chạy mã mà không cần cung cấp hoặc quản lý máy chủ. Bạn chỉ cần viết mã và Lambda sẽ tự động lo việc mở rộng quy mô, quản lý tính sẵn sàng và xử lý lỗi.\nTại sao lại là AWS Lambda? AWS Lambda cho phép bạn chạy mã cho hầu hết mọi loại ứng dụng hoặc dịch vụ backend mà không cần cung cấp hoặc quản lý máy chủ. Chỉ cần tải mã của bạn lên dưới dạng hàm Lambda và dịch vụ sẽ tự động đảm nhận mọi việc còn lại. Lambda hỗ trợ nhiều ngôn ngữ lập trình như Python, Node.js, Java, Go, v.v. Lambda tích hợp chặt chẽ với các dịch vụ khác của AWS như Amazon S3, DynamoDB, API Gateway và CloudWatch để bạn có thể xây dựng các ứng dụng hoàn chỉnh, dễ dàng mở rộng và tiết kiệm chi phí. Với mô hình tính phí theo thời gian thực thi và số lượng request, Lambda là lựa chọn lý tưởng cho những khối lượng công việc không ổn định, biến động.\nLợi ích của AWS Lambda Không cần quản lý máy chủ: Tự động triển khai và mở rộng hàm theo lượng request. Bạn không cần lo lắng về việc cấu hình, vá lỗi hay bảo trì máy chủ. Chi phí thấp, tối ưu tài nguyên: Chỉ thanh toán cho thời gian thực tế mà mã của bạn chạy và số lần gọi hàm. Không tốn chi phí khi không sử dụng. Khả năng mở rộng linh hoạt: Tự động mở rộng theo số lượng request, từ vài request/giây đến hàng ngàn mà không cần can thiệp. Tích hợp dễ dàng với các dịch vụ AWS khác: Dễ dàng xây dựng ứng dụng event-driven, xử lý real-time, tự động hóa workflows với các dịch vụ như S3, DynamoDB, SNS, API Gateway\u0026hellip; Để tìm hiểu thêm về AWS Lambda, bạn có thể tham khảo trang web bên dưới được mô tả\nAbout AWS Lambda Nội dung Tạo Amazon Lambda Cài đặt Amazon Lambda "
 },
 {
-	"uri": "/vi/",
+	"uri": "https://yeder1.github.io/test/vi/",
 	"title": "Giám sát chức năng không có máy chủ",
 	"tags": [],
 	"description": "",
 	"content": "Giám sát chức năng không có máy chủ Tổng Quan Trong phòng thực hành này, bạn sẽ tìm hiểu những kiến thức cơ bản và thực hành về AWS Lambda.\nTạo và giám sát một hàm AWS Lambda với CloudWatch để đo lường hiệu suất. Thiết lập cảnh báo và bảng thông tin tự động để theo dõi lỗi, khởi động nguội và chi phí. Tối ưu hóa hiệu suất hàm bằng nhật ký và đề xuất. Nội dung Giới Thiệu Các bước chuẩn bị Tạo CloudWatch Tạo cảnh báo chi phí Dọn dẹp tài nguyên "
 },
 {
-	"uri": "/vi/1-introduce/",
+	"uri": "https://yeder1.github.io/test/vi/1-introduce/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
 	"content": "Giám sát chức năng không có máy chủ dự án này tập trung vào việc triển khai, giám sát và tối ưu hóa một hàm AWS Lambda nhằm đảm bảo hiệu suất và chi phí hợp lý cho hệ thống serverless. Thông qua việc tích hợp với Amazon CloudWatch và Amazon SNS, dự án cung cấp cái nhìn tổng quan về số lần gọi, thời gian thực thi, số lỗi, cold start, và chi phí vận hành của hàm Lambda.\nNgười dùng sẽ:\nTạo và tối ưu một hàm Lambda sử dụng Python. Kích hoạt Lambda Insights để phân tích cold start. Xây dựng Dashboard CloudWatch trực quan để theo dõi hiệu suất. Thiết lập hệ thống cảnh báo (alarms) qua email khi có sự cố hoặc vượt ngưỡng chi phí. Với việc áp dụng các kỹ thuật giám sát và cảnh báo, dự án này giúp người dùng chủ động trong việc vận hành các dịch vụ serverless và đảm bảo tính ổn định, liên tục của hệ thống trong môi trường thực tế.\n"
 },
 {
-	"uri": "/vi/3-createcloudwatch/3.1-create/",
+	"uri": "https://yeder1.github.io/test/vi/3-createcloudwatch/3.1-create/",
 	"title": "Tạo CloudWatch",
 	"tags": [],
 	"description": "",
 	"content": " Truy cập Amazon CloudWatch Tìm CloudWatch Chọn CloudWatch Trong giao diện CloudWatch Tìm Log group ở thanh bên trái màn hình Chọn những tài nguyên có liên quan tới những lambda cấu hình trước đó 2.1 Trong phần log streams của Log group\nChọn cái đầu tiên 2.2 Mở các report và error ra để xem chi tiết\nSẽ thấy error và report Tiếp tục chọn Lambda Insights ở thanh bên trái màn hình Mở phần Performance monitoring ra và chọn Single function Sau đó đợi một vài phút để lambda insights hoạt động. 3.1 Sau đó lambda insights sẽ hiện như kết quả bên dưới\nLambda insights sẽ hiện ra số lần test thành công và thất bại trước đó Tạo ra một dashboard để theo dõi chi tiết hơn. Chọn bảng điều khiển ở thanh bên trái màn hình Sau đó chọn Create dashboard 4.1 Đặt tên cho bảng điều khiển\nCreate new dashboard LambdaMonitoring Ấn Create dashboard 4.2 Trong phần Widget Configuration\nChọn Line Chọn Next 4.3 Trong phần Add Metric graph\nChọn Lambda 4.4 Tìm các chỉ số giám sát quan trọng của Lambda\nSau đó tích vào Invocations, Duration, Errors của MonitoringDemoFuncton 4.5 Tương tự các bước trên thêm coldstar và error cho dashboard\nChọn CustomLambdaMetrics Ấn Create widget 4.6 Trong CustomLambdaMetrics\nTích vào coldstarCount và ErrorCount 5 Khi tạo thành công\nSẽ hiện ra số lần gọi (Invocations),Thời gian thực thi (Duration) và error (Số lỗi) Sau đó ấn Save "
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-lambda/2.1.1-createlambda/",
+	"uri": "https://yeder1.github.io/test/vi/2-prerequiste/2.1-lambda/2.1.1-createlambda/",
 	"title": "Tạo Lambda",
 	"tags": [],
 	"description": "",
 	"content": "Create Lambda Truy cập AWS Management Console\nTìm Lambda Chọn Lambda Trong giao diện Lambda\nChọn Functions Chọn Create a function 2.1 Trong phần Create a function\nFunction name nhập MonitoringDemoFunction Runtime chọn Python 3.10 Architecture chọn x86_64 Ấn Create function Thông báo tạo thành công như hình bên dưới. "
 },
 {
-	"uri": "/vi/2-prerequiste/",
+	"uri": "https://yeder1.github.io/test/vi/2-prerequiste/",
 	"title": "Các bước chuẩn bị",
 	"tags": [],
 	"description": "",
 	"content": "\rBạn cần tạo một AWS Lambda để thực hiện bài thực hành này.\nỞ bước này, bạn sẽ tạo một AWS Lambda.\nTạo Lambda: Để theo dõi hiệu suất, phân tích cold start, theo dõi chi phí, thiết lập cảnh báo và dashboard,… Viết test python kiểm tra số lần thành công và thất bại để tạo ra dữ liệu giám sát, thử nghiệm hệ thống cảnh báo, theo dõi chi phí,\u0026hellip; Content Tạo Lambda Cài đặt Lambda "
 },
 {
-	"uri": "/vi/2-prerequiste/2.2-testlambda/",
+	"uri": "https://yeder1.github.io/test/vi/2-prerequiste/2.2-testlambda/",
 	"title": "Cấu hình Lambda",
 	"tags": [],
 	"description": "",
 	"content": "Cấu hình Lambda. Truy cập AWS Management Console\nChọn Code. Xóa đoạn code cũ và dán đoạn code này vào Code source. Ấn vào Deploy. Trong giao diện Lambda\nSau đó chọn Configuraion Chọn General Configuration Ấn Edit 2.1 Trong phần Create a function\nỞ phần Memory Đặt thành 256 Ấn Save 2.2 Thông báo tạo thành công như hình bên dưới. Sau đó chọn Test Chọn create new event Event name NormalEvent Event json để mặt định Ấn vào Test 5 - 7 lần và sau đó Save 3.1 Tương tự vậy tạo thêm một cái test lỗi để kiểm tra\nChọn create new event Event name ErorrEvent Event json {\u0026quot;cause_erorr\u0026quot;: true} Ấn vào Test 2 lần và sau đó Save Ở bước này chúng ta sẽ tạo ra một lỗi nhỏ để thuận tiện cho việc theo dõi.\n3.2 Tiếp tục vào phần configuration\nChọn Monitoring and openrations tools Chọn Edit 3.3 Trong phần Edit monitoring tools\nTích chọn Enable cho phần application Signals Tích chọn Enable cho Lambda service traces Tích chọn Enhanced monitoring cho CloudWatch Insights Sau đó ấn Save 3.4 Thông báo cập nhật thành công như ảnh trên\nVà sau đó chờ 10 phút để lambda insight hoạt động "
 },
 {
-	"uri": "/vi/3-createcloudwatch/",
+	"uri": "https://yeder1.github.io/test/vi/3-createcloudwatch/",
 	"title": "Tạo CloudWatch",
 	"tags": [],
 	"description": "",
 	"content": "Giới thiệu về CloudWatch Amazon CloudWatch là một dịch vụ giám sát hiệu suất và thu thập log do AWS cung cấp Theo dõi tài nguyên như EC2, Lambda, RDS, DynamoDB, v.v. Thu thập và phân tích log, metrics (chỉ số), và sự kiện. Cảnh báo (alarm) khi có vấn đề xảy ra (ví dụ như CPU cao bất thường). Xây dashboard trực quan để theo dõi hệ thống theo thời gian thực. Ứng dụng thực tế Giám sát lỗi hệ thống. Đo hiệu suất hàm Lambda. Cảnh báo sớm khi có sự cố. Phân tích log truy cập, lỗi hệ thống. Ở bước này, chúng ta sẽ tạo Amazon CloudWatch để theo dõi tài nguyên Lambda.\nNội dung 3.1. Tạo CloudWatch\n"
 },
 {
-	"uri": "/vi/4-alarm/",
+	"uri": "https://yeder1.github.io/test/vi/4-alarm/",
 	"title": "Tạo cảnh báo chi phí",
 	"tags": [],
 	"description": "",
 	"content": " Trong All alarms Chọn Create alarm 1.1 Trong phần Specify metric and conditions\nChọn Select Metric Chọn Create alarm 1.2 Trong phần Add Metric graph\nChọn Lambda 1.3 Tìm các chỉ số giám sát quan trọng của Lambda\nSau đó tích vào Duration của MonitoringDemoFuncton Ấn vào Select metric 1.4 Chỉ định số liệu và điều kiện\nĐặt Metric name là Duration Statistic là Average Period là 1 minute Conditions -\u0026gt; than\u0026hellip; là 500 Sau đó chọn Next 1.5 Cấu hình hành động\nAlarm state trigger chọn In alarm Send a notification to the following SNS topic chọn Create new topic Create a new topic đặt tên là LambdaAlerts Nhập mail của bạn vào (vd: abcxyz@gmail.com) Sau đó chọn Create topic Bạn cần xác ở trong gmail mà bạn đã đăng ký.\n1.6 Chọn Next 1.7 Thêm chi tiết báo động\nAlarm name HighDurationAlarm Chọn Next 1.8 Xem trước và tạo\nẤn Create alarm Tạo thành công và tiếp tục tạo tương tự 2.1 Trong phần Add Metric graph\nChọn Lambda 2.2 Tìm các chỉ số giám sát quan trọng của Lambda\nSau đó tích vào Errors của MonitoringDemoFuncton Ấn vào Select metric 2.3 Chỉ định số liệu và điều kiện\nĐặt Metric name là Errors Statistic là Average Period là 1 minute Conditions -\u0026gt; than\u0026hellip; là 5 Sau đó chọn Next 2.4 Cấu hình hành động\nAlarm state trigger chọn In alarm Send a notification to the following SNS topic chọn Select an existing SNS topic Send a notification to LambdaAlerts Sau đó chọn Create topic 2.5 Chọn Next 2.6 Thêm chi tiết báo động\nAlarm name HighErrorAlarm Chọn Next 2.7 Xem trước và tạo\nẤn Create alarm 2.8 Tạo thành công Bạn hãy trở lại Lambda và bấm test nhiều lần thì khi vượt quá số lần gọi, thời gian thực thi, và lỗi thì sẽ gửi mail về cho bạn. "
 },
 {
-	"uri": "/vi/5-cleanup/",
+	"uri": "https://yeder1.github.io/test/vi/5-cleanup/",
 	"title": "Dọn dẹp tài nguyên",
 	"tags": [],
 	"description": "",
 	"content": "Dọn dẹp tài nguyên Chúng ta sẽ xóa các tài nguyên được tạo trong bài tập này theo thứ tự sau:\nXóa AWS Lambda Truy cập AWS Lambda Nhấp vào Functions. Tick vào các dự liệu liên quan tới bài lab. Bên góc phải nhấn Action. Chọn delete. Xóa Amazon CloudWatch Truy cập Amazon CloudWatch Nhấn vào Dashboards. Chọn vào các dự liệu liên quan tới bài lab. Chọn delete. 2.2 Sau đó vào All alarms ở thanh bên trái\nChọn vào các dự liệu liên quan tới bài lab. Bên góc phải nhấn Action sau đó chọn delete. 2.3 Tiếp tục chọn Log groups ở thanh bên trái.\nChọn tất cả các dự liệu liên quan tới bài lab. Bên góc phải nhấn Action sau đó chọn delete. Xóa Amazon SNS Truy cập Amazon SNS Chọn Topic. Chọn vào các topic đã tạo trong bài lab. Chọn delete Sau đó chọn subscriptions. Chọn vào các subscriptions đã tạo trong bài lab. Chọn delete. Xóa IAM Policy Truy cập IAM Chọn Policies. Tick vào các dự liệu liên quan tới bài lab. Sau đó chọn delete. "
 },
 {
-	"uri": "/vi/categories/",
+	"uri": "https://yeder1.github.io/test/vi/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/tags/",
+	"uri": "https://yeder1.github.io/test/vi/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

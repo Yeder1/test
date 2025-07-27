@@ -2,158 +2,158 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://yeder1.github.io/test/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="https://yeder1.github.io/test/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://yeder1.github.io/test/"
                 />
   </url><url>
-    <loc>/3-createcloudwatch/3.1-create/</loc>
+    <loc>https://yeder1.github.io/test/3-createcloudwatch/3.1-create/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-createcloudwatch/3.1-create/"
+                href="https://yeder1.github.io/test/vi/3-createcloudwatch/3.1-create/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-createcloudwatch/3.1-create/"
+                href="https://yeder1.github.io/test/3-createcloudwatch/3.1-create/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.1-lambda/2.1.1-createlambda/</loc>
+    <loc>https://yeder1.github.io/test/2-prerequiste/2.1-lambda/2.1.1-createlambda/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.1-lambda/2.1.1-createlambda/"
+                href="https://yeder1.github.io/test/vi/2-prerequiste/2.1-lambda/2.1.1-createlambda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.1-lambda/2.1.1-createlambda/"
+                href="https://yeder1.github.io/test/2-prerequiste/2.1-lambda/2.1.1-createlambda/"
                 />
   </url><url>
-    <loc>/1-introduce/</loc>
+    <loc>https://yeder1.github.io/test/1-introduce/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduce/"
+                href="https://yeder1.github.io/test/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduce/"
+                href="https://yeder1.github.io/test/1-introduce/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.1-lambda/</loc>
+    <loc>https://yeder1.github.io/test/2-prerequiste/2.1-lambda/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.1-lambda/"
+                href="https://yeder1.github.io/test/vi/2-prerequiste/2.1-lambda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.1-lambda/"
+                href="https://yeder1.github.io/test/2-prerequiste/2.1-lambda/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.2-testlambda/</loc>
+    <loc>https://yeder1.github.io/test/2-prerequiste/2.2-testlambda/</loc>
     <lastmod>2024-12-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.2-testlambda/"
+                href="https://yeder1.github.io/test/vi/2-prerequiste/2.2-testlambda/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.2-testlambda/"
+                href="https://yeder1.github.io/test/2-prerequiste/2.2-testlambda/"
                 />
   </url><url>
-    <loc>/2-prerequiste/</loc>
+    <loc>https://yeder1.github.io/test/2-prerequiste/</loc>
     <lastmod>2024-12-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/"
+                href="https://yeder1.github.io/test/vi/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/"
+                href="https://yeder1.github.io/test/2-prerequiste/"
                 />
   </url><url>
-    <loc>/3-createcloudwatch/</loc>
+    <loc>https://yeder1.github.io/test/3-createcloudwatch/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-createcloudwatch/"
+                href="https://yeder1.github.io/test/vi/3-createcloudwatch/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-createcloudwatch/"
+                href="https://yeder1.github.io/test/3-createcloudwatch/"
                 />
   </url><url>
-    <loc>/4-alarm/</loc>
+    <loc>https://yeder1.github.io/test/4-alarm/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-alarm/"
+                href="https://yeder1.github.io/test/vi/4-alarm/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-alarm/"
+                href="https://yeder1.github.io/test/4-alarm/"
                 />
   </url><url>
-    <loc>/5-cleanup/</loc>
+    <loc>https://yeder1.github.io/test/5-cleanup/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-cleanup/"
+                href="https://yeder1.github.io/test/vi/5-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-cleanup/"
+                href="https://yeder1.github.io/test/5-cleanup/"
                 />
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://yeder1.github.io/test/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="https://yeder1.github.io/test/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://yeder1.github.io/test/categories/"
                 />
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://yeder1.github.io/test/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="https://yeder1.github.io/test/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://yeder1.github.io/test/tags/"
                 />
   </url>
 </urlset>

@@ -1,83 +1,83 @@
 [
 {
-	"uri": "/",
+	"uri": "https://yeder1.github.io/test/",
 	"title": "AWServerless Function Monitoring",
 	"tags": [],
 	"description": "",
 	"content": "Serverless Function Monitoring Overall In this lab, you\u0026rsquo;ll learn the basics and practice of AWS Lambda.\nCreate and monitor an AWS Lambda function with CloudWatch for performance metrics. Set up automated alerts and dashboards to track errors, cold starts, and costs. Optimize function performance using logs and recommendations. Content Introduction Preparation Create CloudWatch Create cost alert Clean up resources "
 },
 {
-	"uri": "/3-createcloudwatch/3.1-create/",
+	"uri": "https://yeder1.github.io/test/3-createcloudwatch/3.1-create/",
 	"title": "Create CloudWatch",
 	"tags": [],
 	"description": "",
 	"content": " Go to Amazon CloudWatch Find CloudWatch Select CloudWatch CloudWatch Interface Find Log Group on the left sidebar Select the resources related to the previous lambda configuration 2.1 In the log stream of Log Group\nSelect the first item 2.2 Open reports and errors to view details\nYou will see the error reports and reports report Continue to select Lambda Insights on the left sidebar of the screen Open and select the Performance Monitoring item Single Function Then, wait a few minutes for lambda Insights to work. 3.1 Then, the lambda details will be displayed as the result below\nLambda Details will display the previous successful and failed tests Create a dashboard for more detailed monitoring. Select the dashboard on the left side of the screen\nThen select Create Dashboard 4.1 Name the dashboard\nCreate a new dashboard LambdaMonitoring Click Create Dashboard 4.2 In the Utility Configuration section\nSelect Line Select Next 4.3 In the Add Metric Chart section\nSelect Lambda 4.4 Find the important Lambda monitoring item\nThen select Invitation, Duration, Error of MonitorDemoFuncton 4.5 Same steps as above to add coldstar and error to dashboard\nSelect CustomLambdaMetrics Click Create Extension 4.6 In CustomLambdaMetrics\nCheck ColdstarCount and ErrorCount 5 When created successfully\nNumber of Invocations, Duration and Number of errors will appear Then click Save "
 },
 {
-	"uri": "/2-prerequiste/2.1-lambda/2.1.1-createlambda/",
+	"uri": "https://yeder1.github.io/test/2-prerequiste/2.1-lambda/2.1.1-createlambda/",
 	"title": "Create Lambda",
 	"tags": [],
 	"description": "",
 	"content": "Create Lambda Go to AWS Management Console Search Lambda Select Lambda In the Lambda interface Select Functions Select Create a function 2.1 In the Create a function section\nFunction name enter MonitoringDemoFunction Runtime select Python 3.10 Architecture select x86_64 Click Create function Successful creation notification as shown below. "
 },
 {
-	"uri": "/1-introduce/",
+	"uri": "https://yeder1.github.io/test/1-introduce/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "Serverless Function Monitoring This project focuses on deploying, monitoring, and optimizing an AWS Lambda function to ensure performance and cost efficiency for a serverless system. Through integration with Amazon CloudWatch and Amazon SNS, the project provides an overview of the number of invocations, execution time, errors, cold starts, and operating costs of the Lambda function.\nUsers will:\nCreate and optimize a Lambda function using Python. Enable Lambda Insights to analyze cold starts. Build a visual CloudWatch Dashboard to monitor performance. Set up an email alert system when there is a problem or cost threshold is exceeded. By applying monitoring and alerting techniques, this project helps users to be proactive in operating serverless services and ensure the stability and continuity of the system in a real environment.\n"
 },
 {
-	"uri": "/2-prerequiste/2.1-lambda/",
+	"uri": "https://yeder1.github.io/test/2-prerequiste/2.1-lambda/",
 	"title": "Preparing Lambda",
 	"tags": [],
 	"description": "",
 	"content": "Introduction AWS Lambda is a serverless computing service that lets you run code without provisioning or managing servers. You just write code, and Lambda automatically takes care of scaling, availability, and failure handling.\nWhy AWS Lambda? AWS Lambda lets you run code for almost any type of application or backend service without provisioning or managing servers. Simply upload your code as a Lambda function, and the service automatically takes care of the rest. Lambda supports a variety of programming languages, including Python, Node.js, Java, Go, and more. Lambda integrates tightly with other AWS services like Amazon S3, DynamoDB, API Gateway, and CloudWatch so you can build complete, scalable, and cost-effective applications. With its time-of-execution and request-based pricing model, Lambda is ideal for volatile, volatile workloads.\nBenefits of AWS Lambda No Server Management: Automatically deploy and scale functions based on request volume. You don\u0026rsquo;t need to worry about configuring, patching, or maintaining servers.\nLow Cost, Resource-Optimized: Pay only for the actual time your code runs and the number of function calls. No cost when not in use.\nElastic Scalability: Automatically scale based on request volume, from a few requests/second to thousands without intervention.\nEasy integration with other AWS services: Easily build event-driven applications, handle real-time, automate workflows with services such as S3, DynamoDB, SNS, API Gateway\u0026hellip;\nTo learn more about AWS Lambda, you can refer to the website below described\nAbout AWS Lambda Contents Create Amazon Lambda Install Amazon Lambda "
 },
 {
-	"uri": "/2-prerequiste/2.2-testlambda/",
+	"uri": "https://yeder1.github.io/test/2-prerequiste/2.2-testlambda/",
 	"title": "Lambda Configuration",
 	"tags": [],
 	"description": "",
 	"content": "Configuration Lambda. Go to AWS Management Console Select Code. Delete the old code and paste this code into Code source. Click Deploy. In the Lambda interface Then select Configuraion Select General Configuration Click Edit 2.1 In the Create a function section\nIn the Memory section Set to 256 Click Save 2.2 The creation success message is shown below. Then select Test Select create new event Event name NormalEvent Event json to default Click Test 5 - 7 times and then Save 3.1 Similarly, create another error test to check\nSelect create new event Event name ErorrEvent Event json {\u0026quot;cause_erorr\u0026quot;: true} Click Test 2 times and then Save 3.2 Continue to configuration\nSelect Monitoring and openings tools Select Edit 3.3 In the Edit monitoring tools section\nCheck Enable for application Signals Check Enable for Lambda service traces Check Enhanced monitoring for CloudWatch Insights Then click Save 3.4 Successful update notification as shown above\nAnd then wait 10 minutes for lambda insight to work dynamic "
 },
 {
-	"uri": "/2-prerequiste/",
+	"uri": "https://yeder1.github.io/test/2-prerequiste/",
 	"title": "Preparation ",
 	"tags": [],
 	"description": "",
 	"content": "\rYou need to create an AWS Lambda to perform this exercise.\nIn this step, you will create an AWS Lambda.\nCreate a Lambda: To monitor performance, analyze cold starts, track costs, set up alerts and dashboards,\u0026hellip; Write a python test to check the number of successes and failures to generate monitoring data, test the alert system, track costs,\u0026hellip; Content Create Lambda Setup Lambda "
 },
 {
-	"uri": "/3-createcloudwatch/",
+	"uri": "https://yeder1.github.io/test/3-createcloudwatch/",
 	"title": "Create CloudWatch",
 	"tags": [],
 	"description": "",
 	"content": "About CloudWatch Amazon CloudWatch is a performance monitoring and log collection service provided by AWS Monitor resources such as EC2, Lambda, RDS, DynamoDB, etc. Collect and analyze logs, metrics, and events. Alert when problems occur (e.g. abnormally high CPU). Build intuitive dashboards to monitor the system in real time. Practical applications Monitor system errors. Measure Lambda function performance. Early warning when problems occur. Analyze access logs, system errors. Content 3.1. Create CloudWatch\n"
 },
 {
-	"uri": "/4-alarm/",
+	"uri": "https://yeder1.github.io/test/4-alarm/",
 	"title": "Create cost alert",
 	"tags": [],
 	"description": "",
 	"content": " In All alarms Select Create alarm 1.1 In the Specify metric and conditions section\nSelect Select Metric Select Create alarm 1.2 In the Add Metric graph section\nSelect Lambda 1.3 Find important monitoring metrics of Lambda\nThen check Duration of MonitoringDemoFuncton Click Select metric 1.4 Specify metrics and conditions\nSet Metric name as Duration Statistic as Average Period as 1 minute Conditions -\u0026gt; than\u0026hellip; as 500 Then select Next 1.5 Configure actions\nAlarm state trigger select In alarm Send a notification to the following SNS topic select Create new topic Create a new topic named LambdaAlerts Enter your email in (eg: abcxyz@gmail.com) Then select Create topic You need to confirm in the gmail you registered.\n1.6 Select Next 1.7 Add alarm details\nAlarm name HighDurationAlarm Select Next 1.8 Preview and create\nClick Create alarm Create successfully and continue to create similarly 2.1 In the Add Metric graph section\nSelect Lambda 2.2 Find important monitoring indicators of Lambda\nThen check Errors of MonitoringDemoFuncton Click Select metric 2.3 Specify metrics and conditions\nSet Metric name as Errors Statistic as Average Period as 1 minute Conditions -\u0026gt; than\u0026hellip; as 5 Then select Next 2.4 Configure actions\nAlarm state trigger select In alarm Send a notification to the following SNS topic select Select an existing SNS topic Send a notification to LambdaAlerts Then select Create topic 2.5 Select Next 2.6 Add alarm details\nAlarm name HighErrorAlarm Select Next 2.7 Preview and create\nClick Create alarm 2.8 Created successfully Go back to Lambda and click test many times, when the number of calls, execution time, and errors are exceeded, an email will be sent to you. "
 },
 {
-	"uri": "/5-cleanup/",
+	"uri": "https://yeder1.github.io/test/5-cleanup/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
 	"content": "We will take the following steps to delete the resources we created in this exercise.\nDelete AWS Lambda Go to Lambda console Click Functions. Tick the data related to the lab. On the right corner, click Action. Select delete. Delete AWS CloudWatch. Go to Amazon CloudWatch Click Dashboards. Select the data related to the lab. Select delete. 1.1 Then go to All alarms on the left sidebar.\nSelect the data related to the lab. On the right corner, click Action then select delete. 1.2 Continue to select Log groups on the left sidebar.\nSelect all data related to the lab. On the right corner, click Action then select delete. Delete AWS SNS Go to Amazon SNS Select Topic. Select the topics created in the lab. Select delete Then select subscriptions. Select the subscriptions created in the lab. Select delete Delete IAM Policy Go to IAM Select Policies. Tick the data related to the lab. Then select delete "
 },
 {
-	"uri": "/categories/",
+	"uri": "https://yeder1.github.io/test/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/",
+	"uri": "https://yeder1.github.io/test/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
